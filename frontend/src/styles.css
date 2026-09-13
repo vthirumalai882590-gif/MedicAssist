@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #f4f7f9;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --primary-teal: #184e5b;
+  --primary-teal-hover: #123e49;
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --hero-bg: #e6ecf0;
+  --hero-border: #d2dce4;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-canvas);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Command Center White Card */
+.command-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.command-card-interactive:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+/* Command Hero Card */
+.command-hero {
+  background-color: var(--hero-bg);
+  border: 1px solid var(--hero-border);
+  border-radius: 1.25rem;
+}
+
+/* Custom Scrollbar for light theme */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animations */
+@keyframes trace-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-trace-entry {
+  animation: trace-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulse-teal {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.live-pulse {
+  animation: pulse-teal 2s infinite ease-in-out;
+}

@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Production builds
+frontend/dist/
+dist/
+
+# Python cache & virtual environments
+__pycache__/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/app/*/__pycache__/
+backend/.pytest_cache/
+*.pyc
+venv/
+.venv/
+
+# Environment files with sensitive credentials (keep .env.example)
+.env.local
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

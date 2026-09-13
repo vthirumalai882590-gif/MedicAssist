@@ -1,0 +1,20 @@
+{
+  "last_run": "2026-09-13T02:50:24.620071Z",
+  "scenarios_evaluated": 5,
+  "metrics": {
+    "conflict_detection_rate": 100.0,
+    "tool_selection_accuracy": 96.5,
+    "adaptation_success_rate": 100.0,
+    "verification_completeness": 95.0,
+    "escalation_robustness": 100.0
+  },
+  "rubric_weights": {
+    "conflict_detection_rate": "25% (Agentic Workflow)",
+    "tool_selection_accuracy": "15% (Tool Interaction)",
+    "adaptation_success_rate": "15% (Adaptation / Failure Recovery)",
+    "verification_completeness": "10% (Evaluation & Verification)",
+    "escalation_robustness": "10% (Safety & Escalation)"
+  },
+  "passed_tests": 5,
+  "failed_tests": 0
+}

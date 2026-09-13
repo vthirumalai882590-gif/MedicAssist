@@ -1,0 +1,98 @@
+{
+  "patients": [
+    {
+      "patient_id": "SYN-001",
+      "name": "Jane Doe (Synthetic)",
+      "age": 58,
+      "gender": "Female",
+      "primary_condition": "Type 2 Diabetes Mellitus & Essential Hypertension",
+      "synthetic_only": true,
+      "sources": [
+        {
+          "id": "src-transcript-01",
+          "type": "transcript",
+          "title": "Consultation Transcript (2026-09-10)",
+          "timestamp": "2026-09-10T14:30:00Z",
+          "content": "Patient reports starting Lisinopril 10mg daily for blood pressure control as prescribed during last visit. However, recent consultation note indicates physician started Metformin 500mg BID and advised switching BP medication to Medication B (Amlodipine 5mg). Patient expresses uncertainty about whether Medication A (Lisinopril) or Medication B (Amlodipine) is current.",
+          "metadata": {"clinician": "Dr. Smith (Synthetic)", "setting": "Outpatient Clinic"}
+        },
+        {
+          "id": "src-prevnote-01",
+          "type": "previous_note",
+          "title": "Discharge Summary (2026-08-15)",
+          "timestamp": "2026-08-15T09:15:00Z",
+          "content": "Active Medications: Medication A (Lisinopril 10mg PO daily), Metformin 500mg PO BID. Allergies: Penicillin (Rash). Primary Dx: Hypertension, Type 2 Diabetes.",
+          "metadata": {"facility": "Synthetic General Hospital"}
+        },
+        {
+          "id": "src-meddb-01",
+          "type": "medication_db",
+          "title": "EHR Medication Repository Record",
+          "timestamp": "2026-09-11T08:00:00Z",
+          "content": "Active Prescription Record: Medication B (Amlodipine 5mg PO daily) filled 2026-09-08. Status: Active. Medication A marked pending reconciliation.",
+          "metadata": {"rx_number": "RX-99482"}
+        },
+        {
+          "id": "src-allergy-01",
+          "type": "allergy_record",
+          "title": "Allergy & Hypersensitivity Profile",
+          "timestamp": "2026-08-15T09:15:00Z",
+          "content": "Documented Allergies: Penicillin (Reaction: Urticaria/Rash, Severity: Moderate). Sulfa drugs (Mild nausea).",
+          "metadata": {"verified_by": "Nurse Johnson (Synthetic)"}
+        },
+        {
+          "id": "src-labs-01",
+          "type": "lab_report",
+          "title": "Comprehensive Metabolic Panel & HbA1c",
+          "timestamp": "2026-09-05T11:00:00Z",
+          "content": "HbA1c: 7.2% (Target < 7.0%). Serum Creatinine: 0.9 mg/dL (Normal). eGFR: > 60 mL/min/1.73m2. Potassium: 4.2 mEq/L (Normal).",
+          "metadata": {"lab_id": "LAB-8831"}
+        }
+      ]
+    },
+    {
+      "patient_id": "SYN-002",
+      "name": "John Smith (Synthetic)",
+      "age": 64,
+      "gender": "Male",
+      "primary_condition": "Post-PCI Coronary Artery Disease",
+      "synthetic_only": true,
+      "sources": [
+        {
+          "id": "src-transcript-02",
+          "type": "transcript",
+          "title": "Cardiology Follow-Up Note (2026-09-02)",
+          "timestamp": "2026-09-02T10:00:00Z",
+          "content": "Patient reports hives after starting Aspirin 81mg. Previous note shows no documented aspirin allergy.",
+          "metadata": {"clinician": "Dr. Davis (Synthetic)"}
+        },
+        {
+          "id": "src-prevnote-02",
+          "type": "previous_note",
+          "title": "Inpatient Progress Note",
+          "timestamp": "2026-08-20T16:00:00Z",
+          "content": "Started DAPT: Aspirin 81mg + Clopidogrel 75mg daily. NKDA recorded.",
+          "metadata": {"facility": "Synthetic Heart Center"}
+        }
+      ]
+    },
+    {
+      "patient_id": "SYN-003",
+      "name": "Robert Taylor (Synthetic)",
+      "age": 49,
+      "gender": "Male",
+      "primary_condition": "Chronic Kidney Disease Stage 3",
+      "synthetic_only": true,
+      "sources": [
+        {
+          "id": "src-transcript-03",
+          "type": "transcript",
+          "title": "Nephrology Telehealth Consult",
+          "timestamp": "2026-09-01T15:00:00Z",
+          "content": "Lab discrepancy noted: Serum Potassium reported as 5.8 mEq/L in local clinic lab vs 4.4 mEq/L in hospital baseline lab 3 days prior.",
+          "metadata": {"clinician": "Dr. Patel (Synthetic)"}
+        }
+      ]
+    }
+  ]
+}
